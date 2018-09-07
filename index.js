@@ -103,8 +103,6 @@ class RestartServerPlugin {
   }
 }
 
-module.exports = RestartServerPlugin;
-
 module.exports = (neutrino, options = {}) => neutrino.config
   .plugin(options.pluginId || 'restart-server')
   .use(RestartServerPlugin, [{
